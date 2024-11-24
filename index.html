@@ -3,19 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Довідка</title>
+    <title>Довідка ЄДЕБО</title>
     <style>
+        /* Загальні стилі */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
 
+        /* Стилі для заголовка */
+        .header {
+            background-color: #002c84;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .header-title {
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .menu {
+            background-color: #33529d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-icons {
+            margin-top: 10px;
+        }
+
+        .menu-icons img {
+            width: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        /* Стилі для таблиці */
         .container {
             width: 90%;
             max-width: 600px;
@@ -23,15 +72,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             overflow: hidden;
-        }
-
-        .header {
-            background-color: #0056b3;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
+            margin: 20px auto;
         }
 
         .table {
@@ -82,6 +123,26 @@
     </style>
 </head>
 <body>
+    <!-- Заголовок та меню -->
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Ukraine.svg" alt="Герб України">
+        <span class="header-title">Єдина державна електронна база з питань освіти</span>
+    </div>
+
+    <div class="menu">
+        <a href="#">Реєстри та сервіси</a>
+        <a href="#">Про ЄДЕБО</a>
+        <a href="#">Новини</a>
+        <a href="#">FAQ</a>
+        <div class="menu-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Facebook_Logo_2020.png" alt="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Not_Visible_Icon.png" alt="Не видно">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Speaker_Icon.svg" alt="Гучність">
+        </div>
+    </div>
+
+    <!-- Основний контент -->
     <div class="container">
         <div class="header">Результат запиту</div>
         <table class="table">
@@ -90,19 +151,19 @@
             </tr>
             <tr>
                 <td>Прізвище</td>
-                <td>Литовченко</td>
+                <td>Мишура</td>
             </tr>
             <tr>
                 <td>Ім’я</td>
-                <td>Євгеній</td>
+                <td>Олексій</td>
             </tr>
             <tr>
                 <td>По батькові</td>
-                <td>Олександрович</td>
+                <td>Васильович</td>
             </tr>
             <tr>
                 <td>Дата народження</td>
-                <td>05.10.1995</td>
+                <td>29.03.1991</td>
             </tr>
             <tr>
                 <td>Стать</td>
@@ -110,13 +171,11 @@
             </tr>
             <tr>
                 <td>Реєстраційний номер облікової картки платника податків</td>
-                <td>3497600054</td>
+                <td>3332510415</td>
             </tr>
             <tr>
                 <td>Назва закладу освіти</td>
-                <td>Полтавський <br>
-                    державний <br>
-                    аграрний університет</td>
+                <td>Полтавський державний аграрний університет</td>
             </tr>
             <tr>
                 <td>Ступінь/Рівень освіти</td>
@@ -132,7 +191,7 @@
             </tr>
             <tr>
                 <td>Дата початку здобуття освіти</td>
-                <td>12.08.2013</td>
+                <td>12.08.2010</td>
             </tr>
             <tr>
                 <td>Дата завершення здобуття освіти</td>
@@ -152,18 +211,15 @@
             </tr>
             <tr>
                 <td>Номер сертифікату</td>
-                <td>5BE3FA07000000000000000000000000000000001</td>
+                <td>5BE3FA070...</td>
             </tr>
             <tr>
                 <td>Сертифікат діє</td>
-                <td>з 19.06.2024 <br>
-                    по 19.06.2025</td>
+                <td>з 19.06.2024 по 19.06.2025</td>
             </tr>
             <tr>
-                <td>Посада особи що підписала довідку</td>
-                <td>Начальник <br>
-                    військово-мобілізаційного <br>
-                    підрозділу</td>
+                <td>Посада особи</td>
+                <td>Начальник відділу</td>
             </tr>
             <tr>
                 <td>ПІБ особи</td>
